@@ -1,7 +1,6 @@
 {
   "extends": [
-    "tslint:latest",
-    "tslint-config-prettier"
+    "tslint:latest"
   ],
   "rules": {
     "quotemark": true,
@@ -11,6 +10,7 @@
     "max-classes-per-file": false,
     "variable-name": false,
     "object-literal-sort-keys": false,
-    "no-object-literal-type-assertion": false
+    "no-object-literal-type-assertion": false,
+    "max-line-length": false
   }
 }

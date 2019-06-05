@@ -32,14 +32,15 @@ class GetNewFactHandler implements RequestHandler {
     // the i18next library is set up in the Request Interceptor
     const randomFact = requestAttributes.t(Strings.FACTS);
     // concatenates a standard message with the random fact
-    const speakOutput = requestAttributes.t(Strings.GET_FACT_MESSAGE) + randomFact;
+    const speakOutput =
+      requestAttributes.t(Strings.GET_FACT_MESSAGE) + randomFact;
 
     return (
       handlerInput.responseBuilder
         .speak(speakOutput)
         // Uncomment the next line if you want to keep the session open so you can
         // ask for another fact without first re-opening the skill
-        // .reprompt(requestAttributes.t('HELP_REPROMPT'))
+        .reprompt(requestAttributes.t(Strings.HELP_REPROMPT))
         .withSimpleCard(requestAttributes.t(Strings.SKILL_NAME), randomFact)
         .getResponse()
     );
@@ -162,7 +163,7 @@ exports.handler = skillBuilder
     new HelpHandler(),
     new ExitHandler(),
     new FallbackHandler(),
-    new SessionEndedRequestHandler()
+    new SessionEndedRequestHandler(),
   )
   .addRequestInterceptors(new LocalizationInterceptor())
   .addErrorHandlers(new ErrorHandler())
@@ -441,23 +442,23 @@ export enum LocaleTypes {
 // constructs i18n and l10n data structure
 // translations for this sample can be found at the end of this file
 const languageStrings: i18next.Resource = {
-  de: deData,
+  "de": deData,
   "de-DE": dedeData,
-  en: enData,
+  "en": enData,
   "en-AU": enauData,
   "en-CA": encaData,
   "en-GB": engbData,
   "en-IN": eninData,
   "en-US": enusData,
-  es: esData,
+  "es": esData,
   "es-ES": esesData,
   "es-MX": esmxData,
-  fr: frData,
+  "fr": frData,
   "fr-FR": frfrData,
-  it: itData,
+  "it": itData,
   "it-IT": ititData,
-  ja: jpData,
+  "ja": jpData,
   "ja-JP": jpjpData,
-  pt: ptData,
+  "pt": ptData,
   "pt-BR": ptData,
 };

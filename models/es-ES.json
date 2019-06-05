@@ -1,0 +1,36 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "curiosidades del espacio",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "un dato",
+            "un dato del espacio",
+            "díme un dato",
+            "díme un dato del espacio",
+            "dame un dato",
+            "dame un dato del espacio",
+            "díme una",
+            "díme algo",
+            "díme una curiosidad"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}
