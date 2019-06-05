@@ -2,13 +2,17 @@
 /* eslint no-use-before-define: 0 */
 // sets up dependencies
 import { Response, SessionEndedRequest } from "ask-sdk-model";
-import { SkillBuilders, RequestInterceptor, RequestHandler, HandlerInput, ErrorHandler as ASKErrorHandler } from "ask-sdk-core";
-import { i18next, Resource } from "i18next";
+import {
+  SkillBuilders,
+  RequestInterceptor,
+  RequestHandler,
+  HandlerInput,
+  ErrorHandler as ASKErrorHandler,
+} from "ask-sdk-core";
+import i18next, * as i18n from "i18next";
 import * as sprintf from "i18next-sprintf-postprocessor";
-import { strings } from "./lib/strings";
 import { RequestAttributes } from "./interfaces";
 import { Random } from "./lib/helpers";
-
 
 // core functionality for fact skill
 class GetNewFactHandler implements RequestHandler {
@@ -26,17 +30,19 @@ class GetNewFactHandler implements RequestHandler {
     // gets a random fact by assigning an array to the variable
     // the random item from the array will be selected by the i18next library
     // the i18next library is set up in the Request Interceptor
-    const randomFact = requestAttributes.t("FACTS");
+    const randomFact = requestAttributes.t(Strings.FACTS);
     // concatenates a standard message with the random fact
-    const speakOutput = requestAttributes.t("GET_FACT_MESSAGE") + randomFact;
+    const speakOutput = requestAttributes.t(Strings.GET_FACT_MESSAGE) + randomFact;
 
-    return handlerInput.responseBuilder
-      .speak(speakOutput)
-      // Uncomment the next line if you want to keep the session open so you can
-      // ask for another fact without first re-opening the skill
-      // .reprompt(requestAttributes.t('HELP_REPROMPT'))
-      .withSimpleCard(requestAttributes.t("SKILL_NAME"), randomFact)
-      .getResponse();
+    return (
+      handlerInput.responseBuilder
+        .speak(speakOutput)
+        // Uncomment the next line if you want to keep the session open so you can
+        // ask for another fact without first re-opening the skill
+        // .reprompt(requestAttributes.t('HELP_REPROMPT'))
+        .withSimpleCard(requestAttributes.t(Strings.SKILL_NAME), randomFact)
+        .getResponse()
+    );
   }
 }
 
@@ -51,8 +57,8 @@ class HelpHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t("HELP_MESSAGE"))
-      .reprompt(requestAttributes.t("HELP_REPROMPT"))
+      .speak(requestAttributes.t(Strings.HELP_MESSAGE))
+      .reprompt(requestAttributes.t(Strings.HELP_REPROMPT))
       .getResponse();
   }
 }
@@ -71,8 +77,8 @@ class FallbackHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t("FALLBACK_MESSAGE"))
-      .reprompt(requestAttributes.t("FALLBACK_REPROMPT"))
+      .speak(requestAttributes.t(Strings.FALLBACK_MESSAGE))
+      .reprompt(requestAttributes.t(Strings.FALLBACK_REPROMPT))
       .getResponse();
   }
 }
@@ -89,7 +95,7 @@ class ExitHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t("STOP_MESSAGE"))
+      .speak(requestAttributes.t(Strings.STOP_MESSAGE))
       .getResponse();
   }
 }
@@ -117,8 +123,8 @@ class ErrorHandler implements ASKErrorHandler {
     console.log(`Error stack: ${error.stack}`);
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t("ERROR_MESSAGE"))
-      .reprompt(requestAttributes.t("ERROR_MESSAGE"))
+      .speak(requestAttributes.t(Strings.ERROR_MESSAGE))
+      .reprompt(requestAttributes.t(Strings.ERROR_MESSAGE))
       .getResponse();
   }
 }
@@ -132,20 +138,21 @@ export class LocalizationInterceptor implements RequestInterceptor {
   public async process(handlerInput: HandlerInput): Promise<void> {
     const t = await i18n.default.use(sprintf).init({
       lng: handlerInput.requestEnvelope.request.locale,
-      overloadTranslationOptionHandler: sprintf.overloadTranslationOptionHandler,
-      resources: strings,
+      overloadTranslationOptionHandler:
+        sprintf.overloadTranslationOptionHandler,
+      resources: languageStrings,
       returnObjects: true,
     });
-    const attributes = (handlerInput.attributesManager.getRequestAttributes() as RequestAttributes);
+    const attributes = handlerInput.attributesManager.getRequestAttributes() as RequestAttributes;
     attributes.t = (...args: any[]) => {
       return (t as TranslationFunction)(...args);
     };
     attributes.tr = (key: any) => {
-      const result = (t(key) as string[]);
+      const result = t(key) as string[];
       return Random(result);
     };
   }
-};
+}
 
 const skillBuilder = SkillBuilders.custom();
 
@@ -162,8 +169,31 @@ exports.handler = skillBuilder
   .withCustomUserAgent("sample/basic-fact/v1")
   .lambda();
 
+export enum Strings {
+  SKILL_NAME = "SKILL_NAME",
+  GET_FACT_MESSAGE = "GET_FACT_MESSAGE",
+  HELP_MESSAGE = "HELP_MESSAGE",
+  HELP_REPROMPT = "HELP_REPROMPT",
+  FALLBACK_MESSAGE = "FALLBACK_MESSAGE",
+  FALLBACK_REPROMPT = "FALLBACK_REPROMPT",
+  ERROR_MESSAGE = "ERROR_MESSAGE",
+  STOP_MESSAGE = "STOP_MESSAGE",
+  FACTS = "FACTS",
+}
+interface IStrings {
+  [Strings.SKILL_NAME]: string;
+  [Strings.GET_FACT_MESSAGE]: string;
+  [Strings.HELP_MESSAGE]: string;
+  [Strings.HELP_REPROMPT]: string;
+  [Strings.FALLBACK_MESSAGE]: string;
+  [Strings.FALLBACK_REPROMPT]: string;
+  [Strings.ERROR_MESSAGE]: string;
+  [Strings.STOP_MESSAGE]: string;
+  [Strings.FACTS]: string[];
+}
+
 // translations
-const deData = {
+const deData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Weltraumwissen",
     GET_FACT_MESSAGE: "Hier sind deine Fakten: ",
@@ -182,20 +212,20 @@ const deData = {
       "Auf dem Mars erscheint die Sonne nur halb so groß wie auf der Erde.",
       "Jupiter hat den kürzesten Tag aller Planeten.",
     ],
-  },
+  } as IStrings,
 };
 
-const dedeData = {
+const dedeData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Weltraumwissen auf Deutsch",
-  },
+  } as IStrings,
 };
 
 // TODO: Replace this data with your own."**  This is the data for our skill.  You can see that it is a simple list of facts.
 
 // TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
 
-const enData = {
+const enData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Space Facts",
     GET_FACT_MESSAGE: "Here's your fact: ",
@@ -214,40 +244,40 @@ const enData = {
       "Jupiter has the shortest day of all the planets.",
       "The Sun is an almost perfect sphere.",
     ],
-  },
+  } as IStrings,
 };
 
-const enauData = {
+const enauData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Austrailian Space Facts",
-  },
+  } as IStrings,
 };
 
-const encaData = {
+const encaData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Canadian Space Facts",
-  },
+  } as IStrings,
 };
 
-const engbData = {
+const engbData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "British Space Facts",
-  },
+  } as IStrings,
 };
 
-const eninData = {
+const eninData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Indian Space Facts",
-  },
+  } as IStrings,
 };
 
-const enusData = {
+const enusData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "American Space Facts",
-  },
+  } as IStrings,
 };
 
-const esData = {
+const esData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Curiosidades del Espacio",
     GET_FACT_MESSAGE: "Aquí está tu curiosidad: ",
@@ -266,22 +296,22 @@ const esData = {
       "Jupiter tiene el día más corto de todos los planetas",
       "El sol es una esféra casi perfecta",
     ],
-  },
+  } as IStrings,
 };
 
-const esesData = {
+const esesData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Curiosidades del Espacio para España",
-  },
+  } as IStrings,
 };
 
-const esmxData = {
+const esmxData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Curiosidades del Espacio para México",
-  },
+  } as IStrings,
 };
 
-const frData = {
+const frData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Anecdotes de l'Espace",
     GET_FACT_MESSAGE: "Voici votre anecdote : ",
@@ -300,16 +330,16 @@ const frData = {
       "De toutes les planètes, Jupiter a le jour le plus court.",
       "Le Soleil est une sphère presque parfaite.",
     ],
-  },
+  } as IStrings,
 };
 
-const frfrData = {
+const frfrData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Anecdotes françaises de l'espace",
-  },
+  } as IStrings,
 };
 
-const itData = {
+const itData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Aneddoti dallo spazio",
     GET_FACT_MESSAGE: "Ecco il tuo aneddoto: ",
@@ -328,16 +358,16 @@ const itData = {
       "Tra tutti i pianeti del sistema solare, la giornata più corta è su Giove.",
       "Il Sole è quasi una sfera perfetta.",
     ],
-  },
+  } as IStrings,
 };
 
-const ititData = {
+const ititData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Aneddoti dallo spazio",
-  },
+  } as IStrings,
 };
 
-const jpData = {
+const jpData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "日本語版豆知識",
     GET_FACT_MESSAGE: "知ってましたか？",
@@ -351,19 +381,19 @@ const jpData = {
       "金星は水星と比べて太陽より遠くにありますが、気温は水星よりも高いです。",
       "金星は反時計回りに自転しています。過去に起こった隕石の衝突が原因と言われています。",
       "火星上から見ると、太陽の大きさは地球から見た場合の約半分に見えます。",
-      '木星の<sub alias="いちにち">1日</sub>は全惑星の中で一番短いです。',
+      "木星の<sub alias=\"いちにち\">1日</sub>は全惑星の中で一番短いです。",
       "天の川銀河は約50億年後にアンドロメダ星雲と衝突します。",
     ],
-  },
+  } as IStrings,
 };
 
-const jpjpData = {
+const jpjpData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "日本語版豆知識",
-  },
+  } as IStrings,
 };
 
-const ptData = {
+const ptData: i18next.ResourceLanguage = {
   translation: {
     SKILL_NAME: "Fatos Espaciais",
     GET_FACT_MESSAGE: "Aqui vai: ",
@@ -383,12 +413,34 @@ const ptData = {
       "Júpiter tem os dias mais curtos entre os planetas no nosso sistema solar.",
       "O sol é quase uma esfera perfeita.",
     ],
-  },
+  } as IStrings,
 };
+
+export enum LocaleTypes {
+  de = "de",
+  deDE = "de-DE",
+  en = "en",
+  enAU = "en-AU",
+  enCA = "en-CA",
+  enGB = "en-GB",
+  enIN = "en-IN",
+  enUS = "en-US",
+  es = "es",
+  esES = "es-ES",
+  esMX = "es-MX",
+  fr = "fr",
+  frFR = "fr-FR",
+  it = "it",
+  itIT = "it-IT",
+  ja = "ja",
+  jaJP = "ja-JP",
+  pt = "pt",
+  ptBR = "pt-BR",
+}
 
 // constructs i18n and l10n data structure
 // translations for this sample can be found at the end of this file
-const languageStrings = {
+const languageStrings: i18next.Resource = {
   de: deData,
   "de-DE": dedeData,
   en: enData,
