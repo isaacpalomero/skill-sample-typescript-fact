@@ -1,0 +1,17 @@
+{
+  "summary": "Aprenda fatos divertidos sobre o espaço.",
+  "examplePhrases": [
+    "Alexa abrir fatos espaciais",
+    "Alexa me conta um fato",
+    "Alexa me conta um fato sobre o espaço"
+  ],
+  "keywords": [
+    "espaço",
+    "fatos",
+    "trivia"
+  ],
+  "name": "FactTest+",
+  "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nA skill Fatos Espaciais proporciona divertimento para toda família e certamente fará você mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" para receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\"",
+  "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+  "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+}

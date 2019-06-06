@@ -8,7 +8,9 @@
             "Alexa öffne weltraumfakten"
           ],
           "name": "FactTest+",
-          "description": "Frage nach Weltraumfakten und lerne, was wirklich wichtig ist bei dieser Materie, wie zum Beispiel, dunkle Materie. Weltraumfakten bietet Spaß für die ganze Familie. Um zu beginnen, sage einfach „Alexa, starte Weltraumfakten“ oder „Alexa, öffne Weltraumfakten“, um ein Faktum zu erhalten. Du kannst sie jederzeit unterbrechen, indem du „Alexa, stop“ sagst."
+          "description": "Frage nach Weltraumfakten und lerne, was wirklich wichtig ist bei dieser Materie, wie zum Beispiel, dunkle Materie. Weltraumfakten bietet Spaß für die ganze Familie. Um zu beginnen, sage einfach „Alexa, starte Weltraumfakten“ oder „Alexa, öffne Weltraumfakten“, um ein Faktum zu erhalten. Du kannst sie jederzeit unterbrechen, indem du „Alexa, stop“ sagst.",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "en-AU": {
           "summary": "Learn fun facts about space.",
@@ -23,7 +25,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "en-CA": {
           "summary": "Learn fun facts about space.",
@@ -38,7 +42,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "en-GB": {
           "summary": "Learn fun facts about space.",
@@ -53,7 +59,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "en-IN": {
           "summary": "Learn fun facts about space.",
@@ -68,7 +76,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "en-US": {
           "summary": "Learn fun facts about space.",
@@ -83,7 +93,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
+          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "es-ES": {
           "summary": "Aprenda datos divertidos sobre el espacio.",
@@ -95,10 +107,12 @@
             "datos"
           ],
           "name": "FactTest+",
-          "description": "Pida datos espaciales y aprenda sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puede parar diciendo «Alexa, detente»"
+          "description": "Pida datos espaciales y aprenda sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puede parar diciendo «Alexa, detente»",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "es-MX": {
-          "summary": "Aprenda hechos divertidos sobre el espacio.",
+          "summary": "Aprenda datos divertidos sobre el espacio.",
           "examplePhrases": [
             "Alexa abre curiosidades del espacio"
           ],
@@ -107,7 +121,9 @@
             "datos"
           ],
           "name": "FactTest+",
-          "description": "Pide datos espaciales y aprende sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puedes parar diciendo «Alexa, detente»"
+          "description": "Pida datos espaciales y aprenda sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puede parar diciendo «Alexa, detente»",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "fr-FR": {
           "summary": "Découvrez des anecdotes marrantes sur l'espace.",
@@ -123,7 +139,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Demandez des anecdotes sur l'espace et découvrez ce qui compte vraiment, comme la matière noire.\n\nLes anecdotes de l'espace vont régaler toute la famille et garantir de vous rendre plus intelligent.\n\nPour commencer, dites simplement \"Alexa, lance anecdotes de l'espace\" ou \"Alexa, ouvre anecdotes de l'espace\" pour obtenir une anecdote \".\n\nÀ tout moment, vous pouvez arrêter en disant \"Alexa, stop \""
+          "description": "Demandez des anecdotes sur l'espace et découvrez ce qui compte vraiment, comme la matière noire.\n\nLes anecdotes de l'espace vont régaler toute la famille et garantir de vous rendre plus intelligent.\n\nPour commencer, dites simplement \"Alexa, lance anecdotes de l'espace\" ou \"Alexa, ouvre anecdotes de l'espace\" pour obtenir une anecdote \".\n\nÀ tout moment, vous pouvez arrêter en disant \"Alexa, stop \"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "it-IT": {
           "summary": "Impara informazioni divertenti sullo spazio.",
@@ -136,7 +154,9 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Chiedi i fatti spaziali e scopri cosa conta davvero, come la materia oscura. Aneddoti Spaziali offre divertimento a tutta la famiglia ed è garantito per renderti più intelligente. Per iniziare, basta dire «Alexa, lanciare aneddoti spaziali» o «Alexa, apri aneddoti spaziali» per ottenere un fatto». In qualsiasi momento, puoi fermarti dicendo «Alexa, fermati»"
+          "description": "Chiedi i fatti spaziali e scopri cosa conta davvero, come la materia oscura. Aneddoti Spaziali offre divertimento a tutta la famiglia ed è garantito per renderti più intelligente. Per iniziare, basta dire «Alexa, lanciare aneddoti spaziali» o «Alexa, apri aneddoti spaziali» per ottenere un fatto». In qualsiasi momento, puoi fermarti dicendo «Alexa, fermati»",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "ja-JP": {
           "summary": "宇宙の豆知識を楽しみます",
@@ -151,7 +171,9 @@
             "トリビア"
           ],
           "name": "FactTest+",
-          "description": "宇宙の豆知識を披露します。\n\n宇宙の豆知識は家族で楽しめる役に立つ内容でいっぱいです。\n\n開始するには \"アレクサ、豆知識を開いて\" や \"アレクサ、豆知識\" と話しかけてみてください\n\n\"アレクサ、ストップ\"というといつでも終了できます"
+          "description": "宇宙の豆知識を披露します。\n\n宇宙の豆知識は家族で楽しめる役に立つ内容でいっぱいです。\n\n開始するには \"アレクサ、豆知識を開いて\" や \"アレクサ、豆知識\" と話しかけてみてください\n\n\"アレクサ、ストップ\"というといつでも終了できます",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         },
         "pt-BR": {
           "summary": "Aprenda fatos divertidos sobre o espaço.",
@@ -166,11 +188,91 @@
             "trivia"
           ],
           "name": "FactTest+",
-          "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nA skill Fatos Espaciais proporciona divertimento para toda família e certamente fará você mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" para receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\""
+          "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nA skill Fatos Espaciais proporciona divertimento para toda família e certamente fará você mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" para receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+        },
+        "fr-CA": {
+          "summary": "Découvrez des anecdotes marrantes sur l'espace.",
+          "examplePhrases": [
+            "Alexa ouvre anecdotes de l'espace",
+            "Alexa demande à anecdotes de l'espace de me donner une anecdote",
+            "Alexa demande à anecdotes de l'espace de me trouver une info"
+          ],
+          "keywords": [
+            "espace",
+            "info",
+            "anecdote",
+            "trivia"
+          ],
+          "name": "FactTest+",
+          "description": "Demandez des anecdotes sur l'espace et découvrez ce qui compte vraiment, comme la matière noire.\n\nLes anecdotes de l'espace vont régaler toute la famille et garantir de vous rendre plus intelligent.\n\nPour commencer, dites simplement \"Alexa, lance anecdotes de l'espace\" ou \"Alexa, ouvre anecdotes de l'espace\" pour obtenir une anecdote \".\n\nÀ tout moment, vous pouvez arrêter en disant \"Alexa, stop \"",
+          "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+          "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
         }
       },
       "category": "KNOWLEDGE_AND_TRIVIA"
     },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "de-DE": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "en-AU": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "en-CA": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "en-GB": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "en-IN": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "en-US": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "es-ES": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html"
+        },
+        "es-MX": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html"
+        },
+        "fr-CA": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "fr-FR": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "it-IT": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "ja-JP": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        },
+        "pt-BR": {
+          "privacyPolicyUrl": "https://www.example.org/privacy.html",
+          "termsOfUseUrl": "https://www.example.org/termsOfUseUrl.html"
+        }
+      }
+    },
+    "permissions": [],
     "apis": {
       "custom": {
         "endpoint": {

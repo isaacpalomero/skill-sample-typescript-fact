@@ -1,0 +1,18 @@
+{
+  "summary": "Découvrez des anecdotes marrantes sur l'espace.",
+  "examplePhrases": [
+    "Alexa ouvre anecdotes de l'espace",
+    "Alexa demande à anecdotes de l'espace de me donner une anecdote",
+    "Alexa demande à anecdotes de l'espace de me trouver une info"
+  ],
+  "keywords": [
+    "espace",
+    "info",
+    "anecdote",
+    "trivia"
+  ],
+  "name": "FactTest+",
+  "description": "Demandez des anecdotes sur l'espace et découvrez ce qui compte vraiment, comme la matière noire.\n\nLes anecdotes de l'espace vont régaler toute la famille et garantir de vous rendre plus intelligent.\n\nPour commencer, dites simplement \"Alexa, lance anecdotes de l'espace\" ou \"Alexa, ouvre anecdotes de l'espace\" pour obtenir une anecdote \".\n\nÀ tout moment, vous pouvez arrêter en disant \"Alexa, stop \"",
+  "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+  "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+}

@@ -1,0 +1,15 @@
+{
+  "summary": "Impara informazioni divertenti sullo spazio.",
+  "examplePhrases": [
+    "Alexa apri aneddoti spaziali"
+  ],
+  "keywords": [
+    "spazio",
+    "aneddoti",
+    "trivia"
+  ],
+  "name": "FactTest+",
+  "description": "Chiedi i fatti spaziali e scopri cosa conta davvero, come la materia oscura. Aneddoti Spaziali offre divertimento a tutta la famiglia ed è garantito per renderti più intelligente. Per iniziare, basta dire «Alexa, lanciare aneddoti spaziali» o «Alexa, apri aneddoti spaziali» per ottenere un fatto». In qualsiasi momento, puoi fermarti dicendo «Alexa, fermati»",
+  "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+  "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+}

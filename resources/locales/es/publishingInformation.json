@@ -1,0 +1,14 @@
+{
+  "summary": "Aprenda datos divertidos sobre el espacio.",
+  "examplePhrases": [
+    "Alexa abre curiosidades del espacio"
+  ],
+  "keywords": [
+    "espacio",
+    "datos"
+  ],
+  "name": "FactTest+",
+  "description": "Pida datos espaciales y aprenda sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puede parar diciendo «Alexa, detente»",
+  "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+  "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+}

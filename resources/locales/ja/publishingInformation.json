@@ -1,0 +1,17 @@
+{
+  "summary": "宇宙の豆知識を楽しみます",
+  "examplePhrases": [
+    "アレクサ、宇宙の豆知識を開いて",
+    "アレクサ、宇宙の豆知識で何か話して",
+    "アレクサ、宇宙の豆知識"
+  ],
+  "keywords": [
+    "宇宙",
+    "豆知識",
+    "トリビア"
+  ],
+  "name": "FactTest+",
+  "description": "宇宙の豆知識を披露します。\n\n宇宙の豆知識は家族で楽しめる役に立つ内容でいっぱいです。\n\n開始するには \"アレクサ、豆知識を開いて\" や \"アレクサ、豆知識\" と話しかけてみてください\n\n\"アレクサ、ストップ\"というといつでも終了できます",
+  "smallIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-sm._CB1526682764_.png",
+  "largeIconUri": "https://m.media-amazon.com/images/G/01/alexa-blueprints/icons/facts-skill-lg._CB1526682764_.png"
+}
